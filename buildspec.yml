@@ -1,0 +1,18 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-version:
+      java: corretto17
+  build:
+    commands: 
+    - mvn clean install
+  post_build:
+    commands:
+    - echo Build Completed
+artifacts:
+  files:
+    - target/*.jar
+    - scripts/*.sh
+    - appspec.yml
+  discard-paths: yes
