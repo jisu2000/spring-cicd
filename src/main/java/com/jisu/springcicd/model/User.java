@@ -1,6 +1,6 @@
 package com.jisu.springcicd.model;
 
-import jakarta.persistence.*;
+import javax.persistence.*;
 import lombok.*;
 
 @Entity
